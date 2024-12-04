@@ -1,0 +1,49 @@
+sBoxLayout:
+    #tells coomputer the structure of the boxLayout
+    orientation: 'vertical'
+
+#used to display text on your screen. Always in boxLayout
+    Label:
+        text: 'Enter your name: '
+        font_Size: 24
+
+
+    TextInput:
+        id: user_input
+        hint_text: "Tell me your name: "
+        multiline: False
+
+#a button with customixable appearance and behavior
+    Button:
+        text: 'Greet'
+        on_press: output_label.text = 'Hello, ' + user_input.text
+
+    Label:
+        id: output_label
+        text: 'Welcome!'
+
+    CheckBox:
+        id: check_box
+        active: True
+    Label:
+        text: 'Check me'
+
+    Slider:
+        min: 0
+        max: 100 
+        value: 50
+
+    Switch:
+        id: Switch
+    Label:
+        text: "Toggle me"
+
+    ProgressBar:
+        max: 100
+        value: 75
+
+    Image:
+        source: 'https://images.squarespace-cdn.com/content/v1/606d159a953867291018f801/1619987265163-9XILMVT3TK4HZ5X6538M/VH_01_1080pjpg.jpg'
+        allow_stretch: True
+        keep_ratio: True
+

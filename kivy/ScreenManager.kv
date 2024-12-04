@@ -1,0 +1,10 @@
+ScreenManager:
+    id: screen_manager
+    transition: NoTransition()
+
+    Screen:
+        name: 'Home_screen'
+
+        Button:
+            text: 'Go to settings'
+            on_press: screen_manager.current = 'setting_screen'
